@@ -1,0 +1,56 @@
+package com.tap.pojo;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Student {
+
+	  @Value("1")
+	  private int id;
+	  @Value("Sagar")
+	  private String name;
+	  @Value("Sagar@gmail.com")
+	  private String email;
+	  
+	  public Student() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Student(int id, String name, String email) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", email=" + email + "]";
+	}
+	  
+}
