@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+           <!-- to set the data using constructor -->
+     <bean class="com.tap.pojo.Address" id="Adre1">
+   <property name="laneNo" value="21"></property>
+   <property name="city" value="bng"></property>
+   <property name="State" value="Karnataka"></property>
+   <property name="Country" value="India"></property>
+    </bean>
+   
+   <bean class="com.tap.pojo.Employee" id="emp1">
+   <property name="id" value="1"></property>
+   <property name="name" value="tim"></property>
+   <property name="salary" value="1000"></property>
+   <property name="adress" ref="Adre1"></property>
+   </bean>
+   
+   
+    
+   
+        <!-- to set the data using constructor -->
+        
+    <bean class="com.tap.pojo.Address" id="Adre1">
+       <constructor-arg name="laneNo" value="21"></constructor-arg>
+         <constructor-arg name="city" value="bng"></constructor-arg>
+           <constructor-arg name="state" value="karnataka"></constructor-arg>
+             <constructor-arg name="adress" value="India"></constructor-arg>
+ 
+    </bean>
+    
+    <bean class="com.tap.pojo.Employee" id="emp1">
+       <constructor-arg name="id" value="1"></constructor-arg>
+         <constructor-arg name="name" value="tim"></constructor-arg>
+           <constructor-arg name="salary" value="1000"></constructor-arg>
+             <constructor-arg name="adress" ref="Adre1"></constructor-arg>
+ 
+    </bean>
+        
+        
+        
+   
+</beans> 
