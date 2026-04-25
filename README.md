@@ -64,3 +64,19 @@ This project demonstrates integrating Hibernate with Spring ORM.
 Spring manages Hibernate `SessionFactory` and transaction handling.  
 Database operations are performed using ORM instead of raw SQL.  
 This project helps understand object–relational mapping and persistence.
+
+---
+
+## Spring MVC : Student App (Pure MVC)
+
+This project demonstrates a complete **CRUD (Create, Read, Update, Delete)** web application using **Spring MVC without Spring Boot**.
+All configurations are done manually using Java configuration classes.
+The application is deployed on an external **Apache Tomcat server** instead of embedded servers.
+
+Student data is managed using **Spring JDBC (JdbcTemplate)** and stored in a MySQL database.
+JSP and JSTL are used for the view layer to display and manage data.
+
+This project helps understand end-to-end web application flow including controller, service, DAO layers, and view integration.
+
+---
+
